@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LayoutEat">
+
+
+
+    <ImageView
+
+        android:id="@+id/back"
+        android:layout_width="141dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/IconBack"
+        android:gravity="center_horizontal|center_vertical"
+        android:src="@drawable/backicon"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/beakFood"
+        android:layout_width="300dp"
+        android:layout_height="110dp"
+
+        android:layout_gravity="center"
+        android:gravity="center_horizontal|center_vertical"
+        android:src="@drawable/bfood"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/fastFood"
+        android:layout_alignStart="@+id/fastFood"
+        android:layout_marginTop="46dp"
+        android:contentDescription="@string/breakfook" />
+
+
+    <ImageView
+        android:id="@+id/fastFood"
+        android:layout_width="300dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/FastFood"
+        android:gravity="center_horizontal|center_vertical"
+        android:src="@drawable/ffood"
+        android:layout_below="@+id/beakFood"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/goodfood"
+        android:layout_width="300dp"
+        android:layout_height="110dp"
+        android:src="@drawable/gfood"
+        android:layout_below="@+id/fastFood"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/goodfood" />
+
+</RelativeLayout>
+
+

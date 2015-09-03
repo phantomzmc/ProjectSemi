@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.thunnathorn.project">
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/oldman"
+        android:label="@string/app_name">
+
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Spansreen">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".LayoutEat"
+            android:label="การรับประทานอาหาร"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Eat" />
+        <activity
+            android:name=".LayoutEx"
+            android:label="การบริหารร่างกาย"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Ex" />
+        <activity
+            android:name=".LayoutMon"
+            android:label="สวดมนต์"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Mon" />
+        <activity
+            android:name=".LayoutNews"
+            android:label="ข่าวสาร"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.News" />
+        <activity
+            android:name=".LayoutMovie"
+            android:label="ดูละคร"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Movie" />
+        <activity
+            android:name=".LayoutExit"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LayoutCladOne"
+            android:label="ขั้นตอนที่ 1"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".LayoutCladTwo"
+            android:label="ขั้นตอนที่ 2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Movie" />
+        <activity
+            android:name=".LayoutCladThree"
+            android:label="ขั้นตอนที่ 3"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.pel" />
+        <activity
+            android:name=".LayoutCladEat1"
+            android:label="อาหารเช้า"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Movie" />
+
+        <activity
+            android:name=".LayoutCladEat2"
+            android:label="อาหารกลางวัน"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".LayoutCladEat3"
+            android:label="อาหารเย็น"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.pel" />
+
+
+    </application>
+
+    <uses-sdk
+        android:minSdkVersion="L"
+        android:targetSdkVersion="L"
+        tools:ignore="GradleOverrides,ManifestOrder" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+</manifest>

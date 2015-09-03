@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="25dp">
+        
+
+    <TextView
+        android:id="@+id/ep_pentor"
+        android:layout_width="211dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/back"
+        android:text="Pentor Ep."
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/picpentor"
+        android:layout_toEndOf="@+id/picpentor" />
+    <ImageView
+        android:id="@+id/picpentor"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:src="@drawable/pentor"/>
+    </RelativeLayout>
+
+</LinearLayout>

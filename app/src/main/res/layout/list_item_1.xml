@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/what_your_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is your name?"
+        android:textSize="20dp"
+        android:layout_gravity="center_horizontal" />
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="25dp">
+
+        <TextView
+            android:id="@+id/loading"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Loading...."
+            android:textSize="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/list_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true" />
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LayoutEx">
+
+
+    <ImageView
+        android:id="@+id/headerEx"
+        android:layout_width="500dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/HeaderEX"
+        android:src="@drawable/headex" />
+
+    <ImageView
+        android:id="@+id/IconClassOne"
+        android:layout_width="300dp"
+        android:layout_height="110dp"
+
+        android:layout_alignLeft="@+id/IconClassTwo"
+        android:layout_alignStart="@+id/IconClassTwo"
+        android:layout_below="@+id/headerEx"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/IconClassTwo"
+        android:gravity="center_horizontal|center_vertical"
+        android:src="@drawable/c1" />
+
+
+    <ImageView
+        android:id="@+id/IconClassTwo"
+        android:layout_width="300dp"
+        android:layout_height="110dp"
+        android:layout_below="@+id/IconClassOne"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/IconClassTwo"
+        android:src="@drawable/c2" />
+
+
+    <ImageView
+        android:id="@+id/IconClassThree"
+        android:layout_width="300dp"
+        android:layout_height="110dp"
+        android:layout_alignLeft="@+id/IconClassTwo"
+
+        android:layout_alignStart="@+id/IconClassTwo"
+        android:layout_below="@+id/IconClassTwo"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/IconClassTree"
+        android:src="@drawable/c3" />
+
+    <ImageView
+
+        android:id="@+id/back"
+        android:layout_width="141dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:contentDescription="@string/IconBack"
+        android:gravity="center_horizontal|center_vertical"
+        android:src="@drawable/backicon" />
+</RelativeLayout>
