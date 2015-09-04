@@ -20,7 +20,8 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".Spansreen">
+        <activity android:name=".Spansreen"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
