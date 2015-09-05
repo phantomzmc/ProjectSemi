@@ -15,15 +15,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="1dp"
+            android:id="@+id/tabeat2"
             android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/headeat2"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:contentDescription="@string/headeatone"
-                android:src="@drawable/headereat2" />
-
 
             <ImageView
                 android:id="@+id/piceat2.1"

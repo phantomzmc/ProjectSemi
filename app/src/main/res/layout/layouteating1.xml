@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
@@ -15,14 +16,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="1dp"
+            android:id="@+id/tabeat1"
             android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/headeatone"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:contentDescription="@string/headeatone"
-                android:src="@drawable/headereat1" />
 
 
             <ImageView
@@ -31,8 +27,8 @@
                 android:layout_height="100dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
-                android:src="@drawable/eat1"
-                android:contentDescription="@string/piceat1_1" />
+                android:contentDescription="@string/piceat1_1"
+                android:src="@drawable/eat1" />
 
             <TextView
                 android:id="@+id/eat1.1"
@@ -48,8 +44,8 @@
                 android:layout_height="100dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
-                android:src="@drawable/eat2"
-                android:contentDescription="@string/piceat1_2" />
+                android:contentDescription="@string/piceat1_2"
+                android:src="@drawable/eat2" />
 
             <TextView
                 android:id="@+id/eat1.2"
@@ -65,8 +61,8 @@
                 android:layout_height="100dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
-                android:src="@drawable/eat3"
-                android:contentDescription="@string/piceat1_3" />
+                android:contentDescription="@string/piceat1_3"
+                android:src="@drawable/eat3" />
 
             <TextView
                 android:id="@+id/eat1.3"
@@ -75,7 +71,6 @@
                 android:layout_marginTop="10dp"
                 android:gravity="center"
                 android:text="@string/eat1.3" />
-
 
 
             <ImageView

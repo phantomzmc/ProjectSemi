@@ -13,16 +13,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="1dp"
+            android:id="@+id/tabex1"
             android:orientation="vertical">
 
 
-            <ImageView
-                android:id="@+id/headcladone"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:background="@color/white"
-                android:contentDescription="@string/headcladone"
-                android:src="@drawable/headcladone" />
+
 
 
             <TextView

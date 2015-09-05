@@ -20,7 +20,8 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".Spansreen"
+        <activity
+            android:name=".Spansreen"
             android:theme="@style/Theme.AppCompat.NoActionBar">
 
             <intent-filter>
@@ -89,6 +90,27 @@
             android:label="อาหารเย็น"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.pel" />
+        <activity
+            android:name=".Tab1"
+            android:theme="@style/AppTheme.Eat" />
+        <activity
+            android:name=".Tab2"
+            android:theme="@style/AppTheme.Eat" />
+        <activity
+            android:name=".Tab3"
+            android:theme="@style/AppTheme.Eat" />
+        <activity
+            android:name=".Test_eat"
+            android:label="การรับประทานอาหาร"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Eat" />
+        <activity android:name=".Tab_ex"
+            android:label="การกายบริหาร"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Tabex1"/>
+        <activity android:name=".Tabex2"/>
+        <activity android:name=".Tabex3"/>
+
 
 
     </application>
