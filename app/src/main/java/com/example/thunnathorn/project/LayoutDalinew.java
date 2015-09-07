@@ -1,24 +1,21 @@
 package com.example.thunnathorn.project;
 
-import android.app.ActionBar;
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.webkit.WebView;
 
-
-public class LayoutNews extends Activity {
-
+/**
+ * Created by Thunnathorn on 7/9/2558.
+ */
+public class LayoutDalinew extends Activity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layoutnews);
+        setContentView(R.layout.layoutdalinews);
 
 
-
-        WebView WebViw = (WebView) findViewById(R.id.webViewnews);
+        WebView WebViw = (WebView) findViewById(R.id.webViewdalinews);
         WebViw.getSettings().setJavaScriptEnabled(true);
-        WebViw.loadUrl("http://www.thairath.co.th/home");
+        WebViw.loadUrl("http://www.dailynews.co.th/");
     }
-
 }

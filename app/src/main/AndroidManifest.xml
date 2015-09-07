@@ -59,10 +59,13 @@
             android:theme="@style/AppTheme.Mon"/>
 
         <activity
-            android:name=".LayoutNews"
+            android:name=".Tab_news"
             android:label="ข่าวสาร"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.News" />
+        <activity android:name=".LayoutCM_news"/>
+        <activity android:name=".LayoutDalinew"/>
+        <activity android:name=".LayoutThai_rath"/>
         <activity
             android:name=".LayoutMovie"
             android:label="ดูละคร"

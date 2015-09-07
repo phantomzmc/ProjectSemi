@@ -4,15 +4,11 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.Typeface;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 
 public class MainActivity extends Activity {
@@ -68,7 +64,7 @@ public class MainActivity extends Activity {
 
                                 {
                                     public void onClick(View View) {
-                                        Intent add = new Intent(getApplicationContext(), LayoutNews.class);
+                                        Intent add = new Intent(getApplicationContext(), Tab_news.class);
                                         startActivity(add);
                                     }
                                 }
