@@ -11,6 +11,8 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.squareup.picasso.Picasso;
+
 
 public class LayoutMon extends Activity {
     MediaPlayer mpEffect;
@@ -19,6 +21,15 @@ public class LayoutMon extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layoutmon);
+
+        ImageView b1 = (ImageView) findViewById(R.id.b1);
+        ImageView b2 = (ImageView) findViewById(R.id.b2);
+        ImageView b3 = (ImageView) findViewById(R.id.b3);
+
+
+        Picasso.with(this).load(R.drawable.b1).into(b1);
+        Picasso.with(this).load(R.drawable.b2).into(b2);
+        Picasso.with(this).load(R.drawable.b3).into(b3);
 
         ImageView buttonSound = (ImageView) findViewById(R.id.b1);
         buttonSound.setOnClickListener(new View.OnClickListener() {
@@ -42,6 +53,7 @@ public class LayoutMon extends Activity {
 
 
         ImageView back = (ImageView) findViewById(R.id.back);
+        Picasso.with(this).load(R.drawable.backicon).into(back);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

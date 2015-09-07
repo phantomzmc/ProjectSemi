@@ -10,16 +10,21 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.bumptech.glide.Glide;
+
 /**
  * Created by Thunnathorn on 17/7/2558.
  */
 public class LayoutCladOne extends Activity {
+    private Activity context;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layoutclass1);
 
         ImageView back= (ImageView) findViewById(R.id.back);
+        ImageView picdata1 = (ImageView) findViewById(R.id.picdataOne);
         back.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View View) {
@@ -29,6 +34,7 @@ public class LayoutCladOne extends Activity {
 
 
         });
+        Glide.with(context).load("http://www.siamhealth.net/public_html/images/rheumato/squat1.gif").into(picdata1);
 
 
     }

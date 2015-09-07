@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
+    android:id="@+id/tabeat1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
@@ -16,7 +16,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="1dp"
-            android:id="@+id/tabeat1"
             android:orientation="vertical">
 
 
@@ -27,7 +26,6 @@
                 android:layout_height="100dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
-                android:contentDescription="@string/piceat1_1"
                 android:src="@drawable/eat1" />
 
             <TextView
@@ -82,10 +80,8 @@
                 android:layout_marginTop="10dp"
                 android:contentDescription="@string/bacteat1"
                 android:src="@drawable/backicon" />
-
-
         </LinearLayout>
-
     </ScrollView>
-
 </LinearLayout>
+
+

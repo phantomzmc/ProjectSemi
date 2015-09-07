@@ -47,6 +47,18 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Mon" />
         <activity
+            android:name=".Tab_mon"
+            android:label="สวดมนต์"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Mon" />
+        <activity android:name=".Tabmon2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Mon"/>
+        <activity android:name=".Tabmon3"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Mon"/>
+
+        <activity
             android:name=".LayoutNews"
             android:label="ข่าวสาร"
             android:screenOrientation="portrait"
@@ -104,13 +116,13 @@
             android:label="การรับประทานอาหาร"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Eat" />
-        <activity android:name=".Tab_ex"
+        <activity
+            android:name=".Tab_ex"
             android:label="การกายบริหาร"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Tabex1"/>
-        <activity android:name=".Tabex2"/>
-        <activity android:name=".Tabex3"/>
-
+            android:screenOrientation="portrait" />
+        <activity android:name=".Tabex1" />
+        <activity android:name=".Tabex2" />
+        <activity android:name=".Tabex3" />
 
 
     </application>
@@ -122,5 +134,6 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
 
 </manifest>

@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MyApplication.iml" filepath="$PROJECT_DIR$/MyApplication.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/glide-3.6.1/glide-3.6.1.iml" filepath="$PROJECT_DIR$/glide-3.6.1/glide-3.6.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/glide-3.6.1-javadoc/glide-3.6.1-javadoc.iml" filepath="$PROJECT_DIR$/glide-3.6.1-javadoc/glide-3.6.1-javadoc.iml" />
       <module fileurl="file://$PROJECT_DIR$/gson-2.2.4/gson-2.2.4.iml" filepath="$PROJECT_DIR$/gson-2.2.4/gson-2.2.4.iml" />
       <module fileurl="file://$PROJECT_DIR$/jsoup-1.8.3/jsoup-1.8.3.iml" filepath="$PROJECT_DIR$/jsoup-1.8.3/jsoup-1.8.3.iml" />
     </modules>
