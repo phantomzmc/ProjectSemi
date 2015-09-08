@@ -37,11 +37,6 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Eat" />
         <activity
-            android:name=".LayoutEx"
-            android:label="การบริหารร่างกาย"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.Ex" />
-        <activity
             android:name=".LayoutMon"
             android:label="สวดมนต์"
             android:screenOrientation="portrait"
@@ -51,21 +46,23 @@
             android:label="สวดมนต์"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Mon" />
-        <activity android:name=".Tabmon2"
+        <activity
+            android:name=".Tabmon2"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.Mon"/>
-        <activity android:name=".Tabmon3"
+            android:theme="@style/AppTheme.Mon" />
+        <activity
+            android:name=".Tabmon3"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.Mon"/>
+            android:theme="@style/AppTheme.Mon" />
 
         <activity
             android:name=".Tab_news"
             android:label="ข่าวสาร"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.News" />
-        <activity android:name=".LayoutCM_news"/>
-        <activity android:name=".LayoutDalinew"/>
-        <activity android:name=".LayoutThai_rath"/>
+        <activity android:name=".LayoutCM_news" />
+        <activity android:name=".LayoutDalinew" />
+        <activity android:name=".LayoutThai_rath" />
         <activity
             android:name=".LayoutMovie"
             android:label="ดูละคร"
@@ -74,21 +71,6 @@
         <activity
             android:name=".LayoutExit"
             android:screenOrientation="portrait" />
-        <activity
-            android:name=".LayoutCladOne"
-            android:label="ขั้นตอนที่ 1"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme" />
-        <activity
-            android:name=".LayoutCladTwo"
-            android:label="ขั้นตอนที่ 2"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.Movie" />
-        <activity
-            android:name=".LayoutCladThree"
-            android:label="ขั้นตอนที่ 3"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.pel" />
         <activity
             android:name=".LayoutCladEat1"
             android:label="อาหารเช้า"
@@ -123,9 +105,8 @@
             android:name=".Tab_ex"
             android:label="การกายบริหาร"
             android:screenOrientation="portrait" />
-        <activity android:name=".Tabex1" />
-        <activity android:name=".Tabex2" />
-        <activity android:name=".Tabex3" />
+        <activity android:name=".LayoutEx1"/>
+        <activity android:name=".LayoutEx2"/>
 
 
     </application>

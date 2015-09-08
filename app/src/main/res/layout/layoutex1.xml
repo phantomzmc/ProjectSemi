@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <VideoView
+                android:id="@+id/vdo1"
+                android:layout_width="fill_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="20dp"
+
+                android:layout_gravity="center"
+                android:layout_weight="4.33" />
+            <TextView
+                android:id="@+id/textex1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="การเดินออกกำลังกาย"
+                android:textColor="@color/back"
+                android:textSize="20dp" />
+
+
+
+            <ImageView
+                android:id="@+id/buttonStart"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                android:layout_below="@+id/scrollView"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="18dp"
+                android:contentDescription="@string/play"
+                android:src="@drawable/ic_play_circle_outline_black_24dp" />
+
+            <VideoView
+                android:id="@+id/vdo2"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center" />
+            <TextView
+                android:id="@+id/textex2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="การปั่นจักรยาน"
+                android:textColor="@color/back"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/buttonStart2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                android:layout_below="@+id/scrollView"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="18dp"
+                android:contentDescription="@string/play"
+                android:src="@drawable/ic_play_circle_outline_black_24dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

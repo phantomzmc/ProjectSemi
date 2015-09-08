@@ -22,18 +22,18 @@ public class Tab_ex extends Activity {
         tabHost.setup(mLocalActivityManager);
 
         TabHost.TabSpec tabSpec = tabHost.newTabSpec("tab1")
-                .setIndicator("ขั้นตอนที่ 1")
-                .setContent(new Intent(this, Tabex1.class));
+                .setIndicator("วีดีโอ")
+                .setContent(new Intent(this, LayoutEx1.class));
         TabHost.TabSpec tabSpec2 = tabHost.newTabSpec("tab2")
-                .setIndicator("ขั้นตอนที่ 2")
-                .setContent(new Intent(this, Tabex2.class));
-        TabHost.TabSpec tabSpec3 = tabHost.newTabSpec("tab3")
-                .setIndicator("ขั้นตอนที่ 3")
-                .setContent(new Intent(this, Tabex3.class));
+               .setIndicator("เว็บไซค์")
+               .setContent(new Intent(this, LayoutEx2.class));
+        //TabHost.TabSpec tabSpec3 = tabHost.newTabSpec("tab3")
+        //        .setIndicator("ขั้นตอนที่ 3")
+        //        .setContent(new Intent(this, Tabex3.class));
 
         tabHost.addTab(tabSpec);
         tabHost.addTab(tabSpec2);
-        tabHost.addTab(tabSpec3);
+        //tabHost.addTab(tabSpec3);
     }
 
     @Override
