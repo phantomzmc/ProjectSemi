@@ -1,0 +1,1 @@
+include ':app', ':jsoup-1.8.3', ':gson-2.2.4', ':glide-3.6.1-javadoc', ':glide-3.6.1'
