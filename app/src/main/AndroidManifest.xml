@@ -6,7 +6,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/oldman"
+        android:icon="@drawable/iconapp"
         android:label="@string/app_name">
 
 
@@ -63,11 +63,18 @@
         <activity android:name=".LayoutCM_news" />
         <activity android:name=".LayoutDalinew" />
         <activity android:name=".LayoutThai_rath" />
+
         <activity
-            android:name=".LayoutMovie"
+            android:name=".Tab_movie"
             android:label="ดูละคร"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Movie" />
+        <activity android:name=".LayoutMovie" />
+        <activity android:name=".Movie2" />
+        <activity android:name=".Movie3" />
+        <activity android:name=".Movie4" />
+
+
         <activity
             android:name=".LayoutExit"
             android:screenOrientation="portrait" />
@@ -91,9 +98,6 @@
             android:name=".Tab1"
             android:theme="@style/AppTheme.Eat" />
         <activity
-            android:name=".Tab2"
-            android:theme="@style/AppTheme.Eat" />
-        <activity
             android:name=".Tab3"
             android:theme="@style/AppTheme.Eat" />
         <activity
@@ -105,8 +109,8 @@
             android:name=".Tab_ex"
             android:label="การกายบริหาร"
             android:screenOrientation="portrait" />
-        <activity android:name=".LayoutEx1"/>
-        <activity android:name=".LayoutEx2"/>
+        <activity android:name=".LayoutEx1" />
+        <activity android:name=".LayoutEx2" />
 
 
     </application>

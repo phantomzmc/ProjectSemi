@@ -79,7 +79,7 @@ public class MainActivity extends Activity {
 
                                  {
                                      public void onClick(View View) {
-                                         Intent add = new Intent(getApplication(), LayoutMovie.class);
+                                         Intent add = new Intent(getApplication(), Tab_movie.class);
                                          startActivity(add);
                                      }
                                  }

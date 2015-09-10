@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:geekui="http://schemas.android.com/apk/res-auto"
     android:background="@color/white"
     android:orientation="vertical"
     tools:context=".MainActivity">
@@ -24,6 +25,7 @@
             android:layout_width="500dp"
             android:layout_height="110dp"
             android:gravity="center"
+
             android:text="ยินดีต้อนรับครับ/ค่ะ"
             android:textSize="25dp" />
 
