@@ -5,6 +5,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Typeface;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -27,8 +28,15 @@ public class MainActivity extends Activity {
         ImageView ex = (ImageView) findViewById(R.id.ex);
         ImageView mon = (ImageView) findViewById(R.id.mon);
         ImageView news = (ImageView) findViewById(R.id.news);
-
         ImageView movie = (ImageView) findViewById(R.id.movie);
+        ImageView fb = (ImageView) findViewById(R.id.logoit);
+        fb.setOnClickListener(new View.OnClickListener()
+                              {
+            public void onClick(View vb){
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/itcmtc?fref=ts"));
+                startActivity(intent);
+            }
+        });
 
         eat.setOnClickListener(new View.OnClickListener()
 

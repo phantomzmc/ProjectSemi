@@ -5,11 +5,19 @@
     android:background="@color/white"
     android:orientation="vertical">
 
+
     <WebView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:id="@id/webVieweat2">
 
     </WebView>
+
+    <ProgressBar
+        android:id="@+id/process"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"></ProgressBar>
 
 </LinearLayout>

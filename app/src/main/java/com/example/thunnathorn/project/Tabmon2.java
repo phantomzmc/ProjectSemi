@@ -32,14 +32,14 @@ public class Tabmon2 extends Activity {
         ImageView buttonSound = (ImageView) findViewById(R.id.b21);
         buttonSound.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                playSound(Tabmon2.this, R.raw.a201 );
+                playSound(Tabmon2.this, R.raw.a201);
             }
         });
         ImageView buttonSound1 = (ImageView) findViewById(R.id.b22);
         buttonSound1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                playSound(Tabmon2.this, R.raw.a302 );
+                playSound(Tabmon2.this, R.raw.a302);
             }
         });
         ImageView buttonSound2 = (ImageView) findViewById(R.id.b23);
@@ -47,6 +47,24 @@ public class Tabmon2 extends Activity {
             public void onClick(View v) {
                 playSound(Tabmon2.this, R.raw.a304) ;
             }
+        });
+        ImageView pause = (ImageView) findViewById(R.id.pause);
+        Picasso.with(this).load(R.drawable.pause).into(pause);
+        pause.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                mpEffect.pause();
+
+            }
+        });
+
+        ImageView play = (ImageView) findViewById(R.id.play);
+        Picasso.with(this).load(R.drawable.play).into(play);
+        play.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                mpEffect.start();
+
+            }
+
         });
     }
     public void onStop() {

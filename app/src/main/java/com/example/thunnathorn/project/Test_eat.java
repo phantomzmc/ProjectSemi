@@ -21,14 +21,14 @@ public class Test_eat extends Activity {
         TabHost tabHost = (TabHost) findViewById(R.id.tabhost);
         tabHost.setup(mLocalActivityManager);
 
-        TabHost.TabSpec tabSpec = tabHost.newTabSpec("tab1")
-                .setIndicator("อาหารเช้า")
-                .setContent(new Intent(this, Tab1.class));
-        TabHost.TabSpec tabSpec2 = tabHost.newTabSpec("tab2")
-                .setIndicator("อาหารกลางวัน")
-                .setContent(new Intent(this, LayoutCladEat2.class));
         TabHost.TabSpec tabSpec3 = tabHost.newTabSpec("tab3")
-                .setIndicator("อาหารเย็น")
+                .setIndicator("ร้านอาหารสุขภาพ")
+                .setContent(new Intent(this, LayoutCladEat1.class));
+        TabHost.TabSpec tabSpec = tabHost.newTabSpec("tab1")
+                .setIndicator("อาหารพื้นเมือง")
+                .setContent(new Intent(this, LayoutCladEat2.class));
+        TabHost.TabSpec tabSpec2 = tabHost.newTabSpec("tab2")
+                .setIndicator("อาหารเพื่อสุขภาพ")
                 .setContent(new Intent(this, LayoutCladEat3 .class));
 
         tabHost.addTab(tabSpec);

@@ -3,7 +3,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    xmlns:geekui="http://schemas.android.com/apk/res-auto"
+
     android:background="@color/white"
     android:orientation="vertical">
 
@@ -14,18 +14,17 @@
 
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:weightSum="1">
 
             <VideoView
                 android:id="@+id/vdo1"
-                android:layout_width="fill_parent"
+                android:layout_width="298dp"
                 android:layout_height="300dp"
                 android:layout_marginTop="20dp"
 
-                android:layout_gravity="center"
-                android:layout_weight="4.33" />
+                android:layout_gravity="center" />
             <TextView
                 android:id="@+id/textex1"
                 android:layout_width="fill_parent"
@@ -52,7 +51,7 @@
 
             <VideoView
                 android:id="@+id/vdo2"
-                android:layout_width="fill_parent"
+                android:layout_width="303dp"
                 android:layout_marginTop="20dp"
                 android:layout_height="300dp"
                 android:layout_gravity="center" />

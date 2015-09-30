@@ -108,8 +108,10 @@
         <activity
             android:name=".Tab_ex"
             android:label="การกายบริหาร"
+            android:theme="@style/AppTheme.Ex"
             android:screenOrientation="portrait" />
-        <activity android:name=".LayoutEx1" />
+        <activity android:name=".LayoutEx1"
+            android:configChanges="orientation|screenSize"/>
         <activity android:name=".LayoutEx2" />
 
 

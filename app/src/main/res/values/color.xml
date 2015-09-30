@@ -26,6 +26,8 @@
     <color name="p_yelow">#FFA000</color>
     <color name="d_p_pel">#9C27B0</color>
     <color name="p_pel">#7B1FA2</color>
+    <color name="d_p_gd">#8BC34A</color>
+    <color name="p_gd">#689F38</color>
 
 
 </resources>

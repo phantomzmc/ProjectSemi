@@ -16,11 +16,6 @@ public class LayoutCM_news extends Activity {
 
         WebView WebViw = (WebView) findViewById(R.id.webViewcmnews);
         WebViw.getSettings().setJavaScriptEnabled(true);
-        WebViw.getSettings().setUseWideViewPort(true);
-        WebViw.getSettings().setLoadWithOverviewMode(true);
-        WebViw.getSettings().setSupportZoom(true);
-        WebViw.getSettings().setBuiltInZoomControls(true);
-        WebViw.getSettings().setDisplayZoomControls(false);
         WebViw.loadUrl("http://www.chiangmainews.co.th/page/");
     }
 }
