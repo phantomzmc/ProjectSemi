@@ -3,6 +3,7 @@ package com.example.thunnathorn.project;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.res.Configuration;
+import android.graphics.Typeface;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.AsyncTask;
@@ -12,6 +13,7 @@ import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.MediaController;
+import android.widget.TextView;
 import android.widget.VideoView;
 
 /**

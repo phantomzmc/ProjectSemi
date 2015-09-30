@@ -5,24 +5,54 @@
     android:orientation="vertical"
     android:background="@color/white">
 
+
+
     <ImageView
         android:id="@+id/spansreen"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
         android:layout_gravity="center"
-        android:layout_marginTop="165dp"
         android:contentDescription="@string/spansreen"
-        android:src="@drawable/oldman" />
+        android:src="@drawable/iconapp"
+        android:layout_marginBottom="68dp"
+        android:layout_above="@+id/process"
+        android:layout_centerHorizontal="true" />
 
     <ProgressBar
         android:id="@+id/process"
         style="?android:attr/progressBarStyleLarge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/spansreen"
+        android:layout_marginBottom="94dp"
+        android:layout_above="@+id/linearLayout3"
+        android:layout_centerHorizontal="true" />
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:weightSum="1"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="69dp" />
+        android:id="@+id/linearLayout3">
+
+        <ImageView
+
+            android:id="@+id/imageView"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/it"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:layout_width="187dp"
+            android:layout_height="50dp"
+            android:text="สาขางานเทคโนโลยีสารสนเทศ
+Information Technology"
+            android:textColor="@color/back"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="30dp" />
+
+
+    </LinearLayout>
 
 </RelativeLayout>

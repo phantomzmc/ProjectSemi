@@ -5,4 +5,5 @@
     <item name="layouteat" type="id">layouteat</item>
     <item name="layoutmon" type="id">layoutmon</item>
     <item name="tabeat" type="id">tabeat</item>
+    <item name="webVieweat2" type="id">webVieweat2</item>
 </resources>

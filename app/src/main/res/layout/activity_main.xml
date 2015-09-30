@@ -2,9 +2,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     android:background="@color/white"
     android:orientation="vertical"
     tools:context=".MainActivity">
+
+
     <ImageView
         android:id="@+id/header"
         android:layout_width="500dp"
@@ -13,116 +16,135 @@
         android:contentDescription="@string/PicHeader"
         android:src="@drawable/header2" />
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/header">
-
-        <TextView
-            android:id="@+id/text1"
-            style="@style/HeaderText1"
-            android:layout_width="500dp"
-            android:layout_height="110dp"
-            android:gravity="center"
-            android:text="ยินดีต้อนรับครับ/ค่ะ"
-            android:textSize="25dp" />
-
-    </RelativeLayout>
 
     <LinearLayout
-        android:layout_width="141dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="150dp">
+        android:id="@+id/linearLayout"
+        android:layout_width="200dp"
+        android:layout_height="280dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/header"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp">
 
         <ImageView
 
             android:id="@+id/eat"
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:layout_weight="1"
+            android:layout_width="196dp"
+            android:layout_height="104dp"
+            android:layout_marginTop="20dp"
             android:contentDescription="@string/FoodIcon"
             android:gravity="center_horizontal|center_vertical"
             android:src="@drawable/foodicon" />
-    </LinearLayout>
 
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="151dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="150dp"
-        android:orientation="horizontal" />
-
-    <LinearLayout
-        android:layout_width="141dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="265dp">
 
         <ImageView
             android:id="@+id/mon"
-            android:layout_width="141dp"
-            android:layout_height="100dp"
+            android:layout_width="196dp"
+            android:layout_height="104dp"
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/ex"
-            android:layout_weight="1"
+            android:layout_marginTop="20dp"
             android:src="@drawable/mon" />
+    </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="110dp"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignRight="@+id/linearLayout2"
+            android:layout_alignEnd="@+id/linearLayout2">
+
+
+        <ImageView
+            android:id="@+id/movie"
+            android:layout_width="196dp"
+            android:layout_height="104dp"
+            android:layout_alignLeft="@+id/news"
+            android:layout_alignStart="@+id/news"
+            android:layout_alignTop="@+id/linearLayout3"
+            android:src="@drawable/movieicon"
+            android:layout_marginLeft="75dp" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="200dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="265dp"
-        android:orientation="horizontal">
+        android:layout_height="280dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/header"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:id="@+id/ex"
+            android:layout_width="235dp"
+            android:layout_height="104dp"
+            android:layout_alignTop="@+id/linearLayout"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/linearLayout2"
+            android:layout_toRightOf="@+id/linearLayout2"
+            android:src="@drawable/ex" />
+
+        <ImageView
+            android:id="@+id/news"
+            android:layout_width="141dp"
+            android:layout_height="104dp"
+            android:layout_alignTop="@+id/linearLayout2"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/linearLayout2"
+            android:layout_toRightOf="@+id/linearLayout2"
+            android:src="@drawable/news" />
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout3"
-        android:layout_width="141dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="380dp">
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:weightSum="1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/linearLayout2"
+        android:layout_alignEnd="@+id/linearLayout2"
+        android:layout_marginBottom="10dp">
 
         <ImageView
-            android:id="@+id/movie"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/news"
-            android:layout_alignStart="@+id/news"
-            android:layout_alignTop="@+id/linearLayout3"
-            android:layout_weight="1"
-            android:src="@drawable/movieicon" />
+
+            android:id="@+id/imageView"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="bottom"
+            android:src="@drawable/it" />
+
+        <TextView
+            android:layout_width="187dp"
+            android:layout_height="31dp"
+            android:layout_gravity="bottom"
+            android:textColor="@color/back"
+            android:text="สาขางานเทคโนโลยีสารสนเทศ" />
+        <ImageView
+            android:id="@+id/logoit"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:src="@drawable/facebook"
+            android:layout_gravity="bottom" />
+
+        <ImageView
+            android:id="@+id/exit"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/linearLayout2"
+            android:layout_toRightOf="@+id/linearLayout2"
+            android:contentDescription="@string/exit"
+            android:src="@drawable/exit" />
+
     </LinearLayout>
-
-    <ImageView
-        android:id="@+id/ex"
-        android:layout_width="141dp"
-        android:layout_height="100dp"
-        android:layout_alignTop="@+id/linearLayout"
-        android:layout_toEndOf="@+id/linearLayout2"
-        android:layout_toRightOf="@+id/linearLayout2"
-        android:layout_weight="1"
-        android:src="@drawable/ex" />
-
-    <ImageView
-        android:id="@+id/news"
-        android:layout_width="141dp"
-        android:layout_height="100dp"
-        android:layout_alignEnd="@+id/ex"
-        android:layout_alignRight="@+id/ex"
-        android:layout_alignTop="@+id/linearLayout2"
-        android:layout_weight="1"
-        android:src="@drawable/news" />
-
-    <ImageView
-        android:id="@+id/exit"
-        android:layout_width="141dp"
-        android:layout_height="100dp"
-        android:src="@drawable/exit"
-        android:contentDescription="@string/exit"
-        android:layout_alignTop="@+id/linearLayout3"
-        android:layout_toRightOf="@+id/linearLayout2"
-        android:layout_toEndOf="@+id/linearLayout2" />
-
-
 </RelativeLayout>

@@ -45,4 +45,20 @@
         android:contentDescription="@string/buttonplay"
          />
 
+    <ImageView
+        android:id="@+id/pause"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/play"
+        android:layout_alignLeft="@+id/b22"
+        android:layout_alignStart="@+id/b22" />
+
+    <ImageView
+        android:id="@+id/play"
+        android:layout_width="75dp"
+        android:layout_height="62dp"
+        android:layout_below="@+id/b23"
+        android:layout_alignRight="@+id/b23"
+        android:layout_alignEnd="@+id/b23" />
+
 </RelativeLayout>

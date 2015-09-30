@@ -128,4 +128,10 @@
 
 
 
+    <declare-styleable name="TypefaceTextView">
+        <attr name="customTypeface" format="string" />
+    </declare-styleable>
+
+
+
 </resources>
