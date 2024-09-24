@@ -6,8 +6,10 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.media.MediaPlayer;
+import android.media.session.MediaController;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -16,6 +18,7 @@ import com.squareup.picasso.Picasso;
 
 public class LayoutMon extends Activity {
     MediaPlayer mpEffect;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,6 +75,25 @@ public class LayoutMon extends Activity {
                 dialog.show();
             }
         });
+
+        ImageView pause = (ImageView) findViewById(R.id.pause);
+        Picasso.with(this).load(R.drawable.pause).into(pause);
+        pause.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                mpEffect.pause();
+
+            }
+        });
+
+        ImageView play = (ImageView) findViewById(R.id.play);
+        Picasso.with(this).load(R.drawable.play).into(play);
+        play.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                mpEffect.start();
+
+            }
+
+        });
     }
 
     public void onStop() {
@@ -81,10 +103,11 @@ public class LayoutMon extends Activity {
 
     public void playSound(Context context, int resId) {
         stopIfPlating();
-        mpEffect = MediaPlayer.create(context, resId);
-        mpEffect.start();
-        mpEffect.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            mpEffect = MediaPlayer.create(context, resId);
+            mpEffect.start();
+            mpEffect.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             public void onCompletion(MediaPlayer mp) {
+
                 mp.release();
             }
         });
@@ -100,6 +123,8 @@ public class LayoutMon extends Activity {
             e.printStackTrace();
         }
     }
+
+
 }
 
 
